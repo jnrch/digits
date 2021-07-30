@@ -24,9 +24,14 @@ public class ThreeDigit {
         int numbersLength = numbers[0].length();
 
         switch (numbersLength) {
-            case 2 -> System.out.println(ONE_ZERO + numbersBeforeComa.substring(numbersLength - 2));
-            case 1 -> System.out.println(TWO_ZERO + numbersBeforeComa.substring(numbersLength - 1));
-            default -> System.out.println(numbersBeforeComa.substring(numbersLength - 3));
+            case 2:
+                System.out.println(ONE_ZERO + numbersBeforeComa.substring(numbersLength - 2));
+                break;
+            case 1:
+                System.out.println(TWO_ZERO + numbersBeforeComa.substring(numbersLength - 1));
+                break;
+            default:
+                System.out.println(numbersBeforeComa.substring(numbersLength - 3));
         }
     }
 }
